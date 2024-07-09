@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #191313;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: white; /* Changed color to white */
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase; /* Added text-transform here */
+}
+
+.fact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fact.left .fact-text,
+.fact.right .fact-image {
+    order: 1;
+}
+
+.fact.left .fact-image,
+.fact.right .fact-text {
+    order: 2;
+}
+
+.fact-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.fact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.fact-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
